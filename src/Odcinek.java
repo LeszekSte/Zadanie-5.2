@@ -22,7 +22,7 @@ public class Odcinek {
     public Odcinek(Point punktPoczatek, Point punktKoniec) {
         this.punktPoczatek = punktPoczatek;
         this.punktKoniec = punktKoniec;
-//        System.out.println("Odcinek to String " + toString());
+        System.out.println(toString());
     }
 
     @Override

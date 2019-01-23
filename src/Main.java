@@ -11,15 +11,24 @@ public class Main {
         Calculate calculate = new Calculate();
 
         int nrOdcinka = 0;
-        calculate.menu(++nrOdcinka);
-        Odcinek odcinek1= new Odcinek(calculate.odcinek.getPunktKoniec(),calculate.odcinek.getPunktPoczatek());
 
-        System.out.println();
+        Point point11;
+        calculate.daneOdcinka(++nrOdcinka);
+        Odcinek odcinek1 = new Odcinek(calculate.pointPoczatek,calculate.pointKoniec);
 
-        calculate.menu(++nrOdcinka);
+        calculate.daneOdcinka(++nrOdcinka);
+        Odcinek odcinek2 = new Odcinek(calculate.pointPoczatek,calculate.pointKoniec);
+
+
+
+
+
+
+
+
        // Odcinek odcinek2= new Odcinek(calculate.odcinek.punktPoczatek,calculate.odcinek.punktPoczatek);
 
-        System.out.println("Odcinek nr 1  długość" + calculate.dlugoscLini(odcinek1));
+//        System.out.println("Odcinek nr 1  długość" + calculate.dlugoscLini(odcinek1));
         //calculate.menu(++nrOdcinka);
 
 

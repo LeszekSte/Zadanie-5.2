@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public class Calculate {
 
-    public Odcinek odcinek;
+//    public Odcinek odcinek;
+    Point pointPoczatek;
+    Point pointKoniec;
 
     double dlugoscLini ( Odcinek odcinek){
         double dlX =   odcinek.getPunktKoniec().getX() - odcinek.getPunktPoczatek().getX();
@@ -16,7 +18,7 @@ public class Calculate {
         return  Math.sqrt( dlX * dlX + dlY * dlY);
     }
 
-    void menu (int nrOdcinka){
+    void daneOdcinka (int nrOdcinka){
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.GERMANY);
 
@@ -38,9 +40,9 @@ public class Calculate {
         int koniecY = sc.nextInt();
         sc.nextLine();
 
-        Point pointPoczatek = new Point(poczatekX, poczatekY);
-        Point pointKoniec = new Point(koniecX, koniecY);
 
-        odcinek = new Odcinek(pointPoczatek,pointKoniec);
+
+        pointPoczatek = new Point(poczatekX, poczatekY);
+        pointKoniec = new Point(koniecX, koniecY);
     }
 }
