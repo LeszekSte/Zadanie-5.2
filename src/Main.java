@@ -17,6 +17,6 @@ public class Main {
         calculate.daneOdcinka(++nrOdcinka);
         Odcinek odcinek2 = new Odcinek(calculate.pointPoczatek,calculate.pointKoniec);
 
-        calculate.porownanieOdcinokw (odcinek1,odcinek2);
+        calculate.porownanieOdcinkow (odcinek1,odcinek2);
     }
 }
