@@ -1,6 +1,6 @@
 public class Point {
-    public int x;
-    public int y;
+    private int x;
+    private int y;
 
     public int getX() {
         return x;
@@ -21,6 +21,7 @@ public class Point {
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
+        System.out.println("Punkt -  "+ toString());
     }
 
     @Override

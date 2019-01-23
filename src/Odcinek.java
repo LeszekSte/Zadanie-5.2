@@ -1,6 +1,7 @@
-public class Line {
-        Point punktPoczatek;
-        Point punktKoniec;
+public class Odcinek {
+
+    private Point punktPoczatek;
+    private Point punktKoniec;
 
     public Point getPunktPoczatek() {
         return punktPoczatek;
@@ -18,14 +19,15 @@ public class Line {
         this.punktKoniec = punktKoniec;
     }
 
-    public Line(Point punktPoczatek, Point punktKoniec) {
+    public Odcinek(Point punktPoczatek, Point punktKoniec) {
         this.punktPoczatek = punktPoczatek;
         this.punktKoniec = punktKoniec;
+//        System.out.println("Odcinek to String " + toString());
     }
 
     @Override
     public String toString() {
-        return "Line{" +
+        return "Odcinek{" +
                 "punktPoczatek=" + punktPoczatek +
                 ", punktKoniec=" + punktKoniec +
                 '}';
