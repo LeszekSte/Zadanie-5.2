@@ -1,8 +1,5 @@
 public class Calculate {
-
-    Point pointPoczatek;
-    Point pointKoniec;
-
+    
     void porownanieOdcinkow(Odcinek odcinek1, Odcinek odcinek2) {
         double odcinekDluosc1 = dlugoscLini(odcinek1);
         double odcinekDluosc2 = dlugoscLini(odcinek2);

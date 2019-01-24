@@ -6,21 +6,21 @@ public class ReadData {
 
     Odcinek daneOdcinka(int nrOdcinka) {
         sc.useLocale(Locale.GERMANY);
-        System.out.println("Podaj współrzędne początku " + nrOdcinka + " punktu");
+        System.out.println("Podaj współrzędne początku " + nrOdcinka + " odcinka");
 
-        System.out.printf("Początek odcinka nr %d - współrzędna X\n",nrOdcinka);
+        System.out.println("Punkt początkowy - współ. X");
         int poczatekX = sc.nextInt();
         sc.nextLine();
 
-        System.out.println("współrzędna Y");
+        System.out.println("Punkt początkowy współ. Y");
         int poczatekY = sc.nextInt();
         sc.nextLine();
 
-        System.out.printf("Koniec odcinka nr %d - współrzędna X\n",nrOdcinka);
+        System.out.println("Punkt końcowy współ. X");
         int koniecX = sc.nextInt();
         sc.nextLine();
 
-        System.out.println("współrzędna Y");
+        System.out.println("Punkt końcowy współ. Y");
         int koniecY = sc.nextInt();
         sc.nextLine();
 
