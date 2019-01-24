@@ -1,5 +1,5 @@
 public class Calculate {
-    
+
     void porownanieOdcinkow(Odcinek odcinek1, Odcinek odcinek2) {
         double odcinekDluosc1 = dlugoscLini(odcinek1);
         double odcinekDluosc2 = dlugoscLini(odcinek2);
@@ -23,7 +23,7 @@ public class Calculate {
     }
 
     void wydruk(int nrOd, Odcinek odcinek, double dlugoscOdcinka) {
-        System.out.printf("Odcinek %d  o długości %.2f jst dłuższy.\n", nrOd, dlugoscOdcinka);
+        System.out.printf("Odcinek %d o długości %.2f.\n", nrOd, dlugoscOdcinka);
         System.out.println(odcinek.toString());
         System.out.println();
     }
