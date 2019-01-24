@@ -1,9 +1,5 @@
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Calculate {
 
-    //    public Odcinek odcinek;
     Point pointPoczatek;
     Point pointKoniec;
 
@@ -29,36 +25,9 @@ public class Calculate {
         return Math.sqrt(dlX * dlX + dlY * dlY);
     }
 
-    void daneOdcinka(int nrOdcinka) {
-        Scanner sc = new Scanner(System.in);
-        sc.useLocale(Locale.GERMANY);
-
-        System.out.println("Podaj współrzędne początku " + nrOdcinka + " punktu");
-
-        System.out.println("Początek - współrzędna X");
-        int poczatekX = sc.nextInt();
-        sc.nextLine();
-
-        System.out.println("Początek - współrzędna Y");
-        int poczatekY = sc.nextInt();
-        sc.nextLine();
-
-        System.out.println("Koniec - współrzędna X");
-        int koniecX = sc.nextInt();
-        sc.nextLine();
-
-        System.out.println("Koniec - współrzędna Y");
-        int koniecY = sc.nextInt();
-        sc.nextLine();
-
-        pointPoczatek = new Point(poczatekX, poczatekY);
-        pointKoniec = new Point(koniecX, koniecY);
-    }
-
     void wydruk(int nrOd, Odcinek odcinek, double dlugoscOdcinka) {
-        System.out.printf("Odcinek %d ma długośc %.2f\n", nrOd, dlugoscOdcinka);
+        System.out.printf("Odcinek %d  o długości %.2f jst dłuższy.\n", nrOd, dlugoscOdcinka);
         System.out.println(odcinek.toString());
         System.out.println();
     }
-
 }
