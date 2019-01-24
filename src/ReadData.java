@@ -1,11 +1,13 @@
-import java.util.Locale;
+
 import java.util.Scanner;
+
+import static java.util.Locale.GERMANY;
 
 public class ReadData {
     Scanner sc = new Scanner(System.in);
 
     Odcinek daneOdcinka(int nrOdcinka) {
-        sc.useLocale(Locale.GERMANY);
+        sc.useLocale(GERMANY);
         System.out.println("Podaj współrzędne początku " + nrOdcinka + " odcinka");
 
         System.out.println("Punkt początkowy - współ. X");
